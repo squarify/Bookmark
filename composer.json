@@ -1,0 +1,20 @@
+{
+    "name": "squarify/bookmark",
+    "type": "library",
+    "description": "Squarify Bookmark Component",
+    "keywords": ["parser","bookmark"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pedro Rodrigues",
+            "email": "relvas.rodrigues@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3"
+    },
+    "autoload": {
+        "psr-0": { "Squarify\\Component\\Bookmark\\": "" }
+    },
+    "target-dir": "Squarify/Component/Bookmark"
+}
