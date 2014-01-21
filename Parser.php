@@ -120,6 +120,10 @@ class Parser
         $document = new \DOMDocument();
         $document->preserveWhiteSpace = false;
 
+        if (empty($input)) {
+            throw new ParseException("The input shouldn't be empty");
+        }
+
         if (false === $document->loadHTML($input)) {
             throw new ParseException('The HTML value does not appear to be valid Netscape Bookmark File Format HTML.');
         }
