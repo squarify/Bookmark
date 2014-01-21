@@ -153,16 +153,13 @@ class Parser
         foreach ($entries as $entry) {
             switch ($entry->nodeName) {
                 case 'dl':
-                    //echo '* Entering folder!!' . "\n";
                     $this->traverse($entry);
                     $this->closeFolder();
                     break;
                 case 'a':
-                    //echo '* This is a bookmark! ' . $entry->nodeValue . "\n";
                     $this->addBookmark($entry);
                     break;
                 case 'h3':
-                    //echo '* Adding folder! ' . $entry->nodeValue . "\n";
                     $this->addFolder($entry);
                     break;
                 default:
